@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 var cors = require("cors");
 app.use(cors());
+
 require("dotenv").config();
 
 const port = process.env.PORT || 3000;
@@ -11,7 +12,7 @@ readdirSync("./routes").map((file) =>
   app.use("/", require("./routes/" + file))
 );
 app.get("/", (req, res) => {
-  res.send("Home Page!");
+  res.send();
 });
 
 const products = require("./routes/products.js");

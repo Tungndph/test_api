@@ -208,5 +208,8 @@ const productData = [
 router.get("/products", (req, res) => {
   res.send(productData);
 });
+router.get("/", (req, res) => {
+  res.send(productData);
+});
 
 module.exports = router;
