@@ -1,10 +1,21 @@
-const jsonServer = require("json-server"); // importing json-server Library
-const server = jsonServer.create();
-const router =
-jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+const express = require("express");
+const app = express();
+var cors = require("cors");
+app.use(cors());
+require("dotenv").config();
 
-const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3
-server.use(middlewares);
-server.use(router);
-server.listen(port);
+const port = process.env.PORT || 3000;
+
+const { readdirSync } = require("fs");
+readdirSync("./routes").map((file) =>
+  app.use("/", require("./routes/" + file))
+);
+app.get("/", (req, res) => {
+  res.send("Home Page!");
+});
+
+const products = require("./routes/products.js");
+
+app.listen(port, () => {
+  console.log(`Server is running on ${port}`); // Use template literal for proper interpolation
+});
