@@ -4,7 +4,7 @@ const router = express.Router();
 
 const productData = [
   {
-    _id: 1,
+    id: 1,
     name: "Áo thun nam",
     description: "Áo thun nam cotton 100%",
     price: 150000,
@@ -14,7 +14,7 @@ const productData = [
     raitings: 3,
   },
   {
-    _id: 2,
+    id: 2,
     name: "Quần jean nữ",
     description: "Quần jean nữ dáng ôm",
     price: 250000,
@@ -24,7 +24,7 @@ const productData = [
     raitings: 4,
   },
   {
-    _id: 3,
+    id: 3,
     name: "Balo học sinh",
     description: "Balo học sinh phong cách trẻ trung",
     price: 200000,
@@ -34,7 +34,7 @@ const productData = [
     raitings: 5,
   },
   {
-    _id: 4,
+    id: 4,
     name: "Váy dài hoa",
     description: "Váy dài hoa xinh xắn cho phái đẹp",
     price: 350000,
@@ -44,7 +44,7 @@ const productData = [
     raitings: 5,
   },
   {
-    _id: 5,
+    id: 5,
     name: "Giày thể thao nam",
     description: "Giày thể thao nam chính hãng",
     price: 450000,
@@ -54,7 +54,7 @@ const productData = [
     raitings: 5,
   },
   {
-    _id: 6,
+    id: 6,
     name: "Túi xách nữ",
     description: "Túi xách nữ dáng dài tiện lợi",
     price: 300000,
@@ -64,7 +64,7 @@ const productData = [
     raitings: 5,
   },
   {
-    _id: 7,
+    id: 7,
     name: "Áo khoác nam",
     description: "Áo khoác nam dáng dài, chất liệu chống nước",
     price: 600000,
@@ -74,7 +74,7 @@ const productData = [
     raitings: 4,
   },
   {
-    _id: 8,
+    id: 8,
     name: "Đồng hồ nữ",
     description: "Đồng hồ nữ cao cấp, dây da thời trang",
     price: 800000,
@@ -84,7 +84,7 @@ const productData = [
     raitings: 5,
   },
   {
-    _id: 9,
+    id: 9,
     name: "Bộ đồ đi biển nam",
     description: "Bộ đồ đi biển nam chất liệu thoáng mát",
     price: 280000,
@@ -94,7 +94,7 @@ const productData = [
     raitings: 3,
   },
   {
-    _id: 10,
+    id: 10,
     name: "Quần short nữ",
     description: "Quần short nữ phong cách thể thao",
     price: 180000,
